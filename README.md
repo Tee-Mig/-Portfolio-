@@ -8,13 +8,13 @@ Vous trouverez ici les projets que j'ai réalisés et validés au cours de mon p
 - La programmation en C/C++ (Libft, GetNextLine, ft_printf, etc.)
 - Les algorithmes et structures de données
 - Le shell, les réseaux, la sécurité
-- Et bien plus encore...
+- Et bien plus encore :)
 
 ## 🧠 Projets Personnels
 
 Ce dépôt contient également des projets que j'ai réalisés en dehors du cursus 42. Ils peuvent concerner :
 - Des expérimentations personnelles
-- Des projets open source
+- Des projets divers
 - Des scripts ou outils pour résoudre des problèmes spécifiques
 
 ## 🔎 Organisation du dépôt
