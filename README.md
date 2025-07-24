@@ -5,7 +5,7 @@ Bienvenue sur mon dépôt GitHub où je réunis tous mes projets développés da
 ## 🏫 Projets École 42
 
 Vous trouverez ici les projets que j'ai réalisés et validés au cours de mon parcours à 42. Ils couvrent différents domaines comme :
-- La programmation en C (Libft, GetNextLine, ft_printf, etc.)
+- La programmation en C/C++ (Libft, GetNextLine, ft_printf, etc.)
 - Les algorithmes et structures de données
 - Le shell, les réseaux, la sécurité
 - Et bien plus encore...
