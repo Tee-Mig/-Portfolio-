@@ -26,5 +26,5 @@ N'hésitez pas à explorer, à cloner, ou à poser des questions :)
 ---
 
 📫 Contact : [miguelfaucheux@hotmail.com]  
-🔗 Profil 42 : [[ton_profil_42](https://cv.42.fr/fPu1xydA)]
+🔗 Profil 42 : [[https://cv.42.fr/fPu1xydA]]
 
