@@ -1,0 +1,1 @@
+rm -rf runes/kept/* runes/sold/*
