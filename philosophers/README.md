@@ -19,5 +19,5 @@ Créer un programme `philo` simulant des philosophes assis autour d’une table 
 
 make
 
-./philo 5 800 200 200
-./philo 5 800 200 200 5
+gcc -Wall -Wextra -Werror ./philo 5 800 200 200
+gcc -Wall -Wextra -Werror ./philo 5 800 200 200 5

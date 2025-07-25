@@ -23,4 +23,4 @@ Programmer un jeu où le joueur doit **collecter tous les items** puis **rejoind
 
 ## ⚙️ Exemple
 
-./so_long maps/map.ber
+gcc -Wall -Wextra -Werror ./so_long maps/map.ber

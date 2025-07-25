@@ -6,4 +6,4 @@ Approfondir l’**héritage polymorphe**, la **programmation orientée objet**, 
 
 ## ⚙️ Compilation
 
-c++ -Wall -Wextra -Werror -std=c++98 main.cpp -o main
+c++ -Wall -Wextra -Werror -std=c++98 main.cpp

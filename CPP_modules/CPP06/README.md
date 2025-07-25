@@ -9,4 +9,4 @@ Appliquer la gestion fine des conversions de types, la sérialisation et l’ide
 
 ## ⚙️ Compilation
 
-c++ -Wall -Wextra -Werror -std=c++98 \*.cpp -o program
+c++ -Wall -Wextra -Werror -std=c++98 \*.cpp

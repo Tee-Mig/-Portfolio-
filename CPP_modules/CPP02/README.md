@@ -15,4 +15,4 @@ Ce module approfondit la programmation orientée objet en C++ avec l’introduct
 
 Compiler avec :
 
-c++ -Wall -Wextra -Werror -std=c++98 main.cpp -o main
+c++ -Wall -Wextra -Werror -std=c++98 main.cpp

@@ -19,4 +19,4 @@ Implémenter `ft_printf(const char *format, ...)`, capable de gérer les convers
 ## ⚙️ Utilisation
 
 make
-gcc main.c -L. -lftprintf
+gcc -Wall -Wextra -Werror main.c

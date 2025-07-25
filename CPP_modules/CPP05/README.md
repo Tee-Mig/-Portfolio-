@@ -6,4 +6,4 @@ Approfondir la **gestion des exceptions**, l’**héritage**, la **forme canoniq
 
 ## ⚙️ Compilation
 
-c++ -Wall -Wextra -Werror -std=c++98 main.cpp -o main
+c++ -Wall -Wextra -Werror -std=c++98 main.cpp

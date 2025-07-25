@@ -9,4 +9,4 @@ Découvrir la généricité pour écrire des fonctions et classes indépendantes
 
 ## ⚙️ Compilation
 
-c++ -Wall -Wextra -Werror -std=c++98 \*.cpp -o program
+c++ -Wall -Wextra -Werror -std=c++98 \*.cpp

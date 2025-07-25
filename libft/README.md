@@ -23,4 +23,4 @@ Implémentation de fonctions de manipulation de **listes chaînées** (`t_list`)
 
 make
 
-gcc main.c -L. -lft
+gcc -Wall -Wextra -Werror main.c

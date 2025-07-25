@@ -27,7 +27,5 @@ Projet 42 : Tri d'entiers dans une pile avec un nombre minimal d'opérations via
 
 ## ⚙️ Utilisation
 
-```bash
 ARG="2 1 3"; ./push_swap $ARG
-./push_swap $ARG | ./checker $ARG
-```
+gcc -Wall -Wextra -Werror ./push_swap $ARG | ./checker $ARG

@@ -15,4 +15,4 @@ Ce module introduit l’héritage en C++ en construisant une hiérarchie de clas
 
 Compiler avec :
 
-c++ -Wall -Wextra -Werror -std=c++98 main.cpp -o main
+c++ -Wall -Wextra -Werror -std=c++98 main.cpp

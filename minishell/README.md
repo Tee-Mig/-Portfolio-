@@ -18,4 +18,4 @@ Créer un shell interactif capable d’exécuter des commandes avec redirections
 
 make
 
-./minishell
+gcc -Wall -Wextra -Werror ./minishell

@@ -9,4 +9,4 @@ Mettre en pratique les templates sur des structures avancées.
 
 ## ⚙️ Compilation
 
-c++ -Wall -Wextra -Werror -std=c++98 \*.cpp -o program
+c++ -Wall -Wextra -Werror -std=c++98 \*.cpp

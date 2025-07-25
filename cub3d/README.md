@@ -27,4 +27,4 @@ Créer un jeu de type FPS en 3D simplifiée avec une vue subjective, basé sur l
 
 ## ⚙️ Exécution
 
-./cub3D maps/level.cub
+gcc -Wall -Wextra -Werror ./cub3D maps/level.cub
