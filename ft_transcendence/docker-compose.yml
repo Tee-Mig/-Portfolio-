@@ -1,0 +1,60 @@
+version: "3.7"
+
+networks:
+  local_network:
+    driver: bridge
+volumes:
+  pungy_data:
+    driver: local
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pungy_data:/var/lib/postgresql/data
+    networks:
+      - local_network
+    restart: always
+
+  web:
+    container_name: web
+    build:
+      context: ./apps/web
+      target: production
+      # target: development
+    networks:
+      - local_network
+    volumes:
+      - ./apps/web:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    ports:
+      - 3000:3000
+    depends_on:
+      - server
+
+  server:
+    container_name: server
+    build:
+      context: ./apps/server
+      # target: production
+      target: development
+    volumes:
+      - ./apps/server:/usr/src/server
+      - /usr/src/server/node_modules
+    ports:
+      - 8000:8000
+      - 5555:5555 # for prisma studio
+    networks:
+      - local_network
+    depends_on:
+      - postgres
+    command: bash -c "pnpm prisma db push --accept-data-loss && pnpm dev"
+    restart: always

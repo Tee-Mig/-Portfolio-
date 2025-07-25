@@ -1,0 +1,146 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Game {
+  id Int @id @default(autoincrement())
+
+  winner   User @relation("winner", fields: [winnerId], references: [id])
+  winnerId Int
+  loser    User @relation("loser", fields: [loserId], references: [id])
+  loserId  Int
+
+  winnerScore Int
+  loserScore  Int
+  mode        String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Message {
+  id Int @id @default(autoincrement())
+
+  content String
+  author  User   @relation(fields: [userId], references: [id])
+
+  isInvite  Boolean @default(false)
+  watchLink String? @default("")
+  joinLink  String? @default("")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId Int
+  chat   Chat? @relation(fields: [chatId], references: [id])
+  chatId Int?
+}
+
+model muted {
+  id Int @id @default(autoincrement())
+
+  user User @relation(fields: [userId], references: [id])
+  chat Chat @relation(fields: [chatId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId Int
+  chatId Int
+}
+
+enum ChatType {
+  public
+  private
+  protected
+}
+
+model Chat {
+  id Int @id @default(autoincrement())
+
+  type     ChatType @default(public)
+  password String   @default("")
+
+  users    User[]
+  messages Message[]
+
+  owner   User    @relation("owner", fields: [ownerId], references: [id])
+  ownerId Int
+  admins  User[]  @relation("admins")
+  banned  User[]  @relation("banned")
+  muted   muted[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Friend {
+  user     User @relation("usersFriend", fields: [userId], references: [id])
+  userId   Int
+  friend   User @relation("friendsOfUsers", fields: [friendId], references: [id])
+  friendId Int
+
+  accepted Boolean @default(false)
+
+  createdAt DateTime @default(now())
+
+  @@id([userId, friendId])
+}
+
+model Blocked {
+  user_id        Int
+  user           User @relation("blocked", fields: [user_id], references: [id])
+  blockedUser_id Int
+  blockedUser    User @relation("blockedBy", fields: [blockedUser_id], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@unique([user_id, blockedUser_id])
+}
+
+model User {
+  id Int @id @default(autoincrement())
+
+  id42     Int    @unique
+  email    String @unique
+  username String @unique
+  pfp      String @default("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEX///+/v7+jQ3Y5AAAADklEQVQI12P4AIX8EAgALgAD/aNpbtEAAAAASUVORK5CYII")
+  status   String @default("offline")
+
+  tfaEnabled      Boolean   @default(false)
+  tfaVerified     Boolean   @default(false)
+  tfaOTP          String    @default("")
+  tfaOTPCreatedAt DateTime?
+
+  onboarded Boolean @default(false)
+
+  // FRIEND DATA
+  friends   Friend[]  @relation("usersFriend")
+  friendOf  Friend[]  @relation("friendsOfUsers")
+  blocked   Blocked[] @relation("blocked")
+  blockedBy Blocked[] @relation("blockedBy")
+
+  // CHAT DATA
+  chats      Chat[]
+  chatsOwned Chat[]    @relation("owner")
+  banned     Chat[]    @relation("banned")
+  admin      Chat[]    @relation("admins")
+  muted      muted[]
+  message    Message[]
+
+  // GAME DATA
+  inGame    Boolean @default(false)
+  gamesWon  Game[]  @relation("winner")
+  gamesLost Game[]  @relation("loser")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
