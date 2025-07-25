@@ -14,11 +14,6 @@ Créer un shell interactif capable d’exécuter des commandes avec redirections
 - Un **seul** `global variable` autorisé (signal uniquement)
 - Utilisation de readline autorisée
 
-## 🧨 Bonus (si partie obligatoire parfaite)
-
-- Opérateurs `&&`, `||` avec gestion des parenthèses
-- Wildcards `*` dans le répertoire courant
-
 ## ⚙️ Lancement
 
 make

@@ -15,13 +15,6 @@ Créer un programme `philo` simulant des philosophes assis autour d’une table 
 - Affichage structuré : `timestamp_in_ms X is eating`, `... died`, etc.
 - Arg. : `./philo nb_philo time_to_die time_to_eat time_to_sleep [must_eat]`
 
-## 🧨 Bonus (si partie obligatoire parfaite)
-
-- Programme `philo_bonus`
-- Chaque philosophe est un **processus**
-- Utilisation de **sémaphores** pour gérer les fourchettes
-- Gestion de la mort, synchronisation, affichage sans collision
-
 ## ⚙️ Compilation & Exécution
 
 make
