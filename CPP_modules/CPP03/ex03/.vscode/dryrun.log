@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/mfaucheu/42cursus_github/CPP_modules/CPP_module_03/ex03'
+c++ -std=c++98 -Wall -Werror -Wextra -g -c -o main.o main.cpp
+c++ -std=c++98 -Wall -Werror -Wextra -g -c -o ClapTrap.o ClapTrap.cpp
+c++ -std=c++98 -Wall -Werror -Wextra -g -c -o ScavTrap.o ScavTrap.cpp
+c++ -std=c++98 -Wall -Werror -Wextra -g -c -o FragTrap.o FragTrap.cpp
+c++ -std=c++98 -Wall -Werror -Wextra -g -c -o DiamondTrap.o DiamondTrap.cpp
+c++ main.o ClapTrap.o ScavTrap.o FragTrap.o DiamondTrap.o -o getting_weird
+make: Leaving directory '/home/mfaucheu/42cursus_github/CPP_modules/CPP_module_03/ex03'
+ 

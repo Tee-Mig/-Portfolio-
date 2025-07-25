@@ -1,29 +1,39 @@
-# ft_irc - Serveur IRC
+# ft_irc
 
-## Objectif
+IRC stands for Internet Chat Relay.Our project is creating our own IRC server acessible by an actual IRC client. Internet is ruled by solid standards protocols that allow connected computers to interact with each other. Let's discover this.
 
-Créer un serveur IRC en C++98 capable de gérer plusieurs clients simultanément avec un client IRC standard.
+## Subject
 
-## Fonctionnalités obligatoires
+We musn't develope a client nor handle server-to-server communication and use C++98.
+- Our executable should run as follows : `./ircserv <port> <password>`.
+- Communication between client(s) and server should be done via `TCP/IP` (v4 or/and v6).
+- The server should be able to handle multiple clients at the same time and never hang.
+- Forking isn't allowed. We should take advantage of the `poll()` function and all it's particularities and ressource usage advantages. And we should use `poll()` only and strictly once.
+- We should be able to authenticate ()
+- The server should forward messages to the suitable targets (channel members, private message target, ...).
+- Our server should withstand absolutly every possible error :
+    - Low Bandwith.
+    - Network congestion.
+    - Receiving partial data.
+    - Memory exhaustion.
+    - ...
+- As using our server should ressemble using any traditionnal and official IRC server we have to implement the standard roles and commands :
+    - **[Roles]** At least `Operators` and `Regular Users`.
+    - **[Commands]** At least `KICK`, `INVITE`, `TOPIC`, `MODE (-t, -i, -k, -o, -l)`, `PRIVMSG`, `JOIN`, `NICK`, `PASS` ...  
 
-- Serveur TCP non bloquant (poll ou équivalent unique)
-- Authentification par mot de passe
-- Commandes IRC essentielles : NICK, USER, JOIN, PRIVMSG
-- Gestion des channels et opérateurs (KICK, INVITE, TOPIC, MODE)
-- Transmission des messages à tous les membres d’un channel
+## Subject : bonus
 
-## Contraintes techniques
+- Implement a Bot.
+- Handle file transfers.
 
-- Pas de fork, pas de blocage I/O
-- Compilation avec `-Wall -Wextra -Werror -std=c++98`
-- Pas de bibliothèques externes ni Boost
-- Utilisation exclusive des fonctions réseau standards (socket, bind, listen, accept, poll, send, recv...)
+# Installation
 
-## Bonus (optionnel)
+You'll need `make` and `clang (c++ compiler)`
 
-- Envoi de fichiers
-- Bot IRC
+```sudo apt update && sudo apt install make && sudo apt install clang```
 
-## Utilisation
+or
 
-- Makefile avec règles `all, clean, fclean, re, $(NAME)`
+```sudo apt update && sudo apt install make && sudo apt install build-essential```
+
+Then simply write `make` in your console while being at the root of our repository to compile the program and launch it as indicated above.
