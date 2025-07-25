@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<products>
+  <item> 
+    <id>2501</id>
+    <title>Samsung Galaxy S25</title>
+    <price>1172.08</price>
+    <description>The Galaxy S25 offers top-tier performance with Snapdragon 8 Gen 4, a stunning AMOLED display and AI-enhanced camera features.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/galaxy-s25/1.webp</image>
+    <rating>
+      <rate>4.81</rate>
+      <count>37</count>
+    </rating>
+  </item>
+  <item>
+    <id>2502</id>
+    <title>Samsung Galaxy S25+</title>
+    <price>1316.84</price>
+    <description>Galaxy S25+ with larger AMOLED screen, Snapdragon 8 Gen 4 and improved battery life.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/galaxy-s25-plus/1.webp</image>
+    <rating>
+      <rate>4.85</rate>
+      <count>32</count>
+    </rating>
+  </item>
+  <item>
+    <id>2503</id>
+    <title>Samsung Galaxy S25 Ultra</title>
+    <price>1301.23</price>
+    <description>Galaxy S25 Ultra with 200MP AI camera, integrated S-Pen and 6.9'' 144Hz AMOLED display.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/galaxy-s25-ultra/1.webp</image>
+    <rating>
+      <rate>4.92</rate>
+      <count>45</count>
+    </rating>
+  </item>
+  <item> 
+    <id>2601</id>
+    <title>Samsung Galaxy Z Fold 6</title>
+    <price>1908.9</price>
+    <description>Folding phone with 7.6'' AMOLED 120Hz screen, Snapdragon 8 Gen 3 and Galaxy AI features.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/galaxy-z-fold-6/1.webp</image>
+    <rating>
+      <rate>4.8</rate>
+      <count>19</count>
+    </rating>
+  </item>
+  <item> 
+    <id>2602</id>
+    <title>Samsung Galaxy Z Flip 6</title>
+    <price>1300.91</price>
+    <description>Compact foldable with 3.4'' outer screen, Snapdragon 8 Gen 3 and AI-powered customization.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/galaxy-z-flip-6/1.webp</image>
+    <rating>
+      <rate>4.7</rate>
+      <count>24</count>
+    </rating>
+  </item>
+  <item> 
+    <id>1601</id>
+    <title>iPhone 16 Pro</title>
+    <price>1082.46</price>
+    <description>iPhone 16 Pro with A18 Bionic chip, 120Hz ProMotion display and advanced AI photography.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/iphone-16-pro/1.webp</image>
+    <rating>
+      <rate>4.9</rate>
+      <count>34</count>
+    </rating>
+  </item>
+  <item> 
+    <id>1602</id>
+    <title>iPhone 16</title>
+    <price>984.15</price>
+    <description>iPhone 16 with A18 chip, USB-C, improved battery and new AI features.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/iphone-16/1.webp</image>
+    <rating>
+      <rate>4.8</rate>
+      <count>40</count>
+    </rating>
+  </item>
+  <item> 
+    <id>1603</id>
+    <title>iPhone 16e</title>
+    <price>748.3</price>
+    <description>iPhone 16e is the budget-friendly edition with lightweight body, powerful A17 chip and full iOS 18 experience.</description>
+    <category>smartphones</category>
+    <image>https://cdn.dummyjson.com/product-images/smartphones/iphone-16e/1.webp</image>
+    <rating>
+      <rate>4.5</rate>
+      <count>55</count>
+    </rating>
+  </item>
+  <item>
+    <id>9</id>
+    <title>WD 2TB Elements Portable External Hard Drive - USB 3.0 </title>
+    <price>64</price>
+    <description>USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg</image>
+    <rating>
+      <rate>3.3</rate>
+      <count>203</count>
+    </rating>
+  </item>
+  <item>
+    <id>10</id>
+    <title>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</title>
+    <price>109</price>
+    <description>Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg</image>
+    <rating>
+      <rate>2.9</rate>
+      <count>470</count>
+    </rating>
+  </item>
+  <item>
+    <id>11</id>
+    <title>Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</title>
+    <price>109</price>
+    <description>3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking &amp; Correction) to provide the optimized performance and enhanced reliability.</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg</image>
+    <rating>
+      <rate>4.8</rate>
+      <count>319</count>
+    </rating>
+  </item>
+  <item>
+    <id>12</id>
+    <title>WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</title>
+    <price>114</price>
+    <description>Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg</image>
+    <rating>
+      <rate>4.8</rate>
+      <count>400</count>
+    </rating>
+  </item>
+  <item>
+    <id>13</id>
+    <title>Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</title>
+    <price>599</price>
+    <description>21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg</image>
+    <rating>
+      <rate>2.9</rate>
+      <count>250</count>
+    </rating>
+  </item>
+  <item>
+    <id>14</id>
+    <title>Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </title>
+    <price>999.99</price>
+    <description>49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg</image>
+    <rating>
+      <rate>2.2</rate>
+      <count>140</count>
+    </rating>
+  </item>
+</products>

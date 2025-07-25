@@ -1,0 +1,14 @@
+title,price,brand,category,rate,source
+iPhone 16 Pro,1261.59$,Apple,smartphones,4.9,dummyjson
+iPhone 16,879.93$,Apple,smartphones,4.8,dummyjson
+iPhone 16e,647.96$,Apple,smartphones,4.5,dummyjson
+iPhone 5s,199.99$,Apple,smartphones,2.83,dummyjson
+iPhone 6,299.99$,Apple,smartphones,3.41,dummyjson
+iPhone 13 Pro,1099.99$,Apple,smartphones,4.12,dummyjson
+iPhone X,899.99$,Apple,smartphones,2.51,dummyjson
+iPhone 16 Pro,1082.46$,,smartphones,4.9,fakestorejson
+iPhone 16,984.15$,,smartphones,4.8,fakestorejson
+iPhone 16e,748.3$,,smartphones,4.5,fakestorejson
+iPhone 16 Pro,1215.25$,,,4.9,serpapi
+iPhone 16,854.51$,,,4.8,serpapi
+iPhone 16e,751.64$,,,4.6,serpapi

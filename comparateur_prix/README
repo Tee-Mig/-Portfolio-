@@ -1,0 +1,14 @@
+# Comparateur de prix
+
+Ce projet en ligne de commande permet de comparer les prix d’un produit (ex: iPhone) en interrogeant plusieurs sources (API JSON, XML local), puis :
+
+- Affiche les résultats avec pandas
+- Les stocke dans un fichier CSV et une base SQLite
+- Génère une visualisation des prix avec matplotlib
+- Affiche la table depuis SQLite
+
+## Usage
+
+```bash
+python main.py
+```

@@ -1,0 +1,110 @@
+city,country,date,pm25,pm25_category
+Paris,France,2023-01-01,18.3,Moderate
+Paris,France,2023-01-02,22.1,Moderate
+Paris,France,2023-01-03,16.2,Moderate
+London,UK,2023-01-01,25.4,Moderate
+London,UK,2023-01-02,30.2,Moderate
+London,UK,2023-01-03,28.9,Moderate
+Madrid,Spain,2023-01-01,14.7,Moderate
+Madrid,Spain,2023-01-02,19.6,Moderate
+Madrid,Spain,2023-01-03,21.1,Moderate
+Paris,France,2023-01-01,18.3,Moderate
+Paris,France,2023-01-02,22.1,Moderate
+Paris,France,2023-01-03,16.2,Moderate
+Paris,France,2023-01-04,20.5,Moderate
+Paris,France,2023-01-05,24.7,Moderate
+Paris,France,2023-01-06,21.3,Moderate
+Paris,France,2023-01-07,26.9,Moderate
+Paris,France,2023-01-08,19.8,Moderate
+Paris,France,2023-01-09,22.4,Moderate
+Paris,France,2023-01-10,18.6,Moderate
+Paris,France,2023-01-11,20.7,Moderate
+Paris,France,2023-01-12,23.1,Moderate
+Paris,France,2023-01-13,25.9,Moderate
+Paris,France,2023-01-14,28.2,Moderate
+Paris,France,2023-01-15,21.5,Moderate
+Paris,France,2023-01-16,27.3,Moderate
+Paris,France,2023-01-17,29.4,Moderate
+Paris,France,2023-01-18,23.9,Moderate
+Paris,France,2023-01-19,20.1,Moderate
+Paris,France,2023-01-20,26.7,Moderate
+London,UK,2023-01-01,25.4,Moderate
+London,UK,2023-01-02,30.2,Moderate
+London,UK,2023-01-03,28.9,Moderate
+London,UK,2023-01-04,33.1,Moderate
+London,UK,2023-01-05,35.3,Moderate
+London,UK,2023-01-06,36.1,Unhealthy for Sensitive Groups
+London,UK,2023-01-07,34.7,Moderate
+London,UK,2023-01-08,38.2,Unhealthy for Sensitive Groups
+London,UK,2023-01-09,40.5,Unhealthy for Sensitive Groups
+London,UK,2023-01-10,37.9,Unhealthy for Sensitive Groups
+London,UK,2023-01-11,36.5,Unhealthy for Sensitive Groups
+London,UK,2023-01-12,32.1,Moderate
+London,UK,2023-01-13,39.8,Unhealthy for Sensitive Groups
+London,UK,2023-01-14,41.2,Unhealthy for Sensitive Groups
+London,UK,2023-01-15,42.5,Unhealthy for Sensitive Groups
+London,UK,2023-01-16,38.4,Unhealthy for Sensitive Groups
+London,UK,2023-01-17,35.0,Moderate
+London,UK,2023-01-18,33.7,Moderate
+London,UK,2023-01-19,36.3,Unhealthy for Sensitive Groups
+London,UK,2023-01-20,37.1,Unhealthy for Sensitive Groups
+Madrid,Spain,2023-01-01,14.7,Moderate
+Madrid,Spain,2023-01-02,19.6,Moderate
+Madrid,Spain,2023-01-03,21.1,Moderate
+Madrid,Spain,2023-01-04,17.3,Moderate
+Madrid,Spain,2023-01-05,20.8,Moderate
+Madrid,Spain,2023-01-06,23.0,Moderate
+Madrid,Spain,2023-01-07,22.5,Moderate
+Madrid,Spain,2023-01-08,19.9,Moderate
+Madrid,Spain,2023-01-09,18.4,Moderate
+Madrid,Spain,2023-01-10,17.7,Moderate
+Madrid,Spain,2023-01-11,20.5,Moderate
+Madrid,Spain,2023-01-12,24.3,Moderate
+Madrid,Spain,2023-01-13,22.1,Moderate
+Madrid,Spain,2023-01-14,25.8,Moderate
+Madrid,Spain,2023-01-15,23.4,Moderate
+Madrid,Spain,2023-01-16,19.7,Moderate
+Madrid,Spain,2023-01-17,21.3,Moderate
+Madrid,Spain,2023-01-18,18.9,Moderate
+Madrid,Spain,2023-01-19,20.6,Moderate
+Madrid,Spain,2023-01-20,22.0,Moderate
+Berlin,Germany,2023-01-01,12.5,Moderate
+Berlin,Germany,2023-01-02,13.7,Moderate
+Berlin,Germany,2023-01-03,15.2,Moderate
+Berlin,Germany,2023-01-04,14.9,Moderate
+Berlin,Germany,2023-01-05,16.1,Moderate
+Berlin,Germany,2023-01-06,13.8,Moderate
+Berlin,Germany,2023-01-07,17.3,Moderate
+Berlin,Germany,2023-01-08,18.6,Moderate
+Berlin,Germany,2023-01-09,19.5,Moderate
+Berlin,Germany,2023-01-10,20.4,Moderate
+Berlin,Germany,2023-01-11,21.3,Moderate
+Berlin,Germany,2023-01-12,22.9,Moderate
+Berlin,Germany,2023-01-13,23.6,Moderate
+Berlin,Germany,2023-01-14,24.7,Moderate
+Berlin,Germany,2023-01-15,26.1,Moderate
+Berlin,Germany,2023-01-16,27.4,Moderate
+Berlin,Germany,2023-01-17,25.3,Moderate
+Berlin,Germany,2023-01-18,26.7,Moderate
+Berlin,Germany,2023-01-19,28.9,Moderate
+Berlin,Germany,2023-01-20,30.0,Moderate
+Rome,Italy,2023-01-01,20.1,Moderate
+Rome,Italy,2023-01-02,22.4,Moderate
+Rome,Italy,2023-01-03,21.5,Moderate
+Rome,Italy,2023-01-04,23.8,Moderate
+Rome,Italy,2023-01-05,24.9,Moderate
+Rome,Italy,2023-01-06,26.3,Moderate
+Rome,Italy,2023-01-07,27.1,Moderate
+Rome,Italy,2023-01-08,29.4,Moderate
+Rome,Italy,2023-01-09,30.8,Moderate
+Rome,Italy,2023-01-10,32.2,Moderate
+Rome,Italy,2023-01-11,33.7,Moderate
+Rome,Italy,2023-01-12,31.4,Moderate
+Rome,Italy,2023-01-13,34.1,Moderate
+Rome,Italy,2023-01-14,35.5,Unhealthy for Sensitive Groups
+Rome,Italy,2023-01-15,37.9,Unhealthy for Sensitive Groups
+Rome,Italy,2023-01-16,36.7,Unhealthy for Sensitive Groups
+Rome,Italy,2023-01-17,38.5,Unhealthy for Sensitive Groups
+Rome,Italy,2023-01-18,39.2,Unhealthy for Sensitive Groups
+Rome,Italy,2023-01-19,40.7,Unhealthy for Sensitive Groups
+Rome,Italy,2023-01-20,41.9,Unhealthy for Sensitive Groups

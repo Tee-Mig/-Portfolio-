@@ -1,0 +1,19 @@
+# Core data wrangling & cleaning
+readr
+dplyr
+lubridate
+glue
+stringr
+
+# Text mining & NLP
+tidytext
+tm
+wordcloud
+RColorBrewer
+
+# Machine learning
+randomForest
+caret
+
+# Web app (Shiny dashboard)
+shiny
