@@ -1,0 +1,1 @@
+rm -rf data/load_complete.txt data/parquet/* data/processed/* data/raw/* data/foods_nutrition.db load_complete.txt

@@ -1,0 +1,26 @@
+services:
+  luigi-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: luigi-pipeline
+    hostname: luigi
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - flask-api
+    command: ["luigid", "--port", "8082"]
+    ports:
+      - "8082:8082"
+
+  flask-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask-api
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "5000:5000"
+    working_dir: /app
+    command: ["python", "pipeline/api/app.py"]
