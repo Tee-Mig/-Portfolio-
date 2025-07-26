@@ -1,17 +1,15 @@
 # .libPaths("C:/Users/migue/OneDrive/Bureau/info/python/data_engineering/nps_prediction/packages")
 .libPaths(c(normalizePath("packages"), .libPaths()))
 
-# Chargement des bibliothèques
 library(shiny)
 library(ggplot2)
 library(dplyr)
 library(readr)
+library(glue)
 
-# Charger les données nettoyées
 df <- readRDS("data/df_cleaned.rds")
 rf_model <- readRDS("models/rf_model.rds")
 
-# Interface utilisateur (UI)
 ui <- fluidPage(
   titlePanel("📊 Dashboard NPS - Carrefour Feedback"),
 
@@ -39,9 +37,7 @@ ui <- fluidPage(
   )
 )
 
-# Serveur (Server)
 server <- function(input, output) {
-  # Graphique : distribution des classes NPS
   output$plot_nps <- renderPlot({
     df %>%
       count(nps_class) %>%
@@ -52,7 +48,6 @@ server <- function(input, output) {
       theme(legend.position = "none")
   })
 
-  # Graphique : montant moyen par classe
   output$plot_montant <- renderPlot({
     df %>%
       group_by(nps_class) %>%
@@ -64,17 +59,14 @@ server <- function(input, output) {
       theme(legend.position = "none")
   })
 
-  # Prédiction
   observeEvent(input$predire, {
-    # Création d'une nouvelle observation
     new_obs <- data.frame(
       montant_commande = input$montant,
       temps_livraison = input$livraison,
-      retard = as.factor(input$retard),
-      produit_endommage = as.factor(input$endommage)
+      retard = factor(input$retard, levels = levels(df$retard)),
+      produit_endommage = factor(input$endommage, levels = levels(df$produit_endommage))
     )
 
-    # Prédiction
     pred <- predict(rf_model, newdata = new_obs)
     output$prediction_result <- renderText({
       glue::glue("Classe prédite : {pred}")
@@ -82,5 +74,4 @@ server <- function(input, output) {
   })
 }
 
-# Lancer l'application
 shinyApp(ui = ui, server = server)

@@ -6,19 +6,16 @@ library(ggplot2)
 library(lubridate)
 library(glue)
 
-# Charger les données nettoyées
 df <- readRDS("data/df_cleaned.rds")
 
 cat(glue("Dataset chargé : {nrow(df)} lignes\n\n"))
 
-# --- Analyse de la distribution des scores NPS ---
 ggplot(df, aes(x = note_NPS)) +
   geom_histogram(binwidth = 1, fill = "#0073C2FF", color = "white") +
   labs(title = "Distribution des scores NPS",
        x = "Score NPS", y = "Nombre de clients") +
   theme_minimal()
 
-# --- Proportion des classes NPS ---
 df %>%
   count(nps_class) %>%
   mutate(freq = n / sum(n)) %>%
@@ -30,14 +27,12 @@ df %>%
   theme_minimal() +
   theme(legend.position = "none")
 
-# --- Analyse du délai de livraison ---
 ggplot(df, aes(x = temps_livraison)) +
   geom_histogram(binwidth = 0.5, fill = "#E69F00", color = "white") +
   labs(title = "Distribution du temps de livraison (jours)",
        x = "Temps de livraison (jours)", y = "Nombre de commandes") +
   theme_minimal()
 
-# --- Impact du retard sur le NPS moyen ---
 df %>%
   group_by(retard) %>%
   summarise(nps_moyen = mean(note_NPS, na.rm = TRUE)) %>%
@@ -48,7 +43,6 @@ df %>%
   theme_minimal() +
   theme(legend.position = "none")
 
-# --- Montant moyen par classe NPS ---
 df %>%
   group_by(nps_class) %>%
   summarise(montant_moyen = mean(montant_commande, na.rm = TRUE)) %>%
@@ -59,7 +53,6 @@ df %>%
   theme_minimal() +
   theme(legend.position = "none")
 
-# --- Evolution du NPS moyen dans le temps ---
 df %>%
   mutate(mois = floor_date(date, "month")) %>%
   group_by(mois) %>%
@@ -71,7 +64,6 @@ df %>%
        x = "Mois", y = "NPS moyen") +
   theme_minimal()
 
-# --- Distribution des commentaires par classe NPS (nombre de mots) ---
 df %>%
   mutate(nb_mots = sapply(strsplit(commentaire, " "), length)) %>%
   ggplot(aes(x = nps_class, y = nb_mots, fill = nps_class)) +
