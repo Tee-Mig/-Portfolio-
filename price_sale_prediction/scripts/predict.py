@@ -8,7 +8,6 @@ def main(args):
     print("Chargement des nouvelles données...")
     df = pd.read_csv(args.input)
 
-    # Préparation des features
     X = df.drop(columns=["title"], errors='ignore')
 
     print("Chargement du préprocesseur...")
@@ -26,7 +25,6 @@ def main(args):
     print("Prédiction...")
     predictions = model.predict(X_processed).flatten()
 
-    # Ajout des prédictions au DataFrame
     df["predicted_price"] = predictions
 
     print(f"Sauvegarde des prédictions dans {args.output} ...")
