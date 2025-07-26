@@ -40,7 +40,6 @@ def display_stats():
 
     db_url = f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{db}"
     
-    # Attend que la DB soit prête
     wait_for_db(db_url)
 
     engine = create_engine(db_url)
